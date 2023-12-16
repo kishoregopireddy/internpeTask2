@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+p {
+    font-size: 16px;
+    color: rgb(106, 37, 37);
+    margin: 15px 0 20px 0 ;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: black;
+    background-color: rgb(254, 190, 112);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.normal1 {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: rgb(6, 6, 6);
+    background-color: rgb(6, 167, 248);
+    border-radius: 4px;
+    cursor: pointer;
+    border:1px solid black;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(253, 243, 229);
+}
+
+#header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 80px;
+    background-color: rgb(236, 232, 232);
+    box-shadow: 0px 5px 15px rgba(11, 11, 11, 1.0);
+    z-index: 999;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active { 
+    color: rgb(248, 81, 4);
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background:rgb(2, 160, 245);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#person {
+    background-image: url("girl.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    background-color: rgb(236, 232, 232);
+    color:darkgreen;
+    padding: 0 80px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 5vh;
+}
+
+#person h4 {
+    padding-bottom: 20px;
+}
+
+#person h1 {
+    padding-bottom: 20px;
+}
+
+#person p {
+    padding-bottom: 20px;
+}
+
+#person button {
+    color: rgb(255, 64, 0);
+    border: 50px;
+    background: rgb(16, 16, 16);
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 15%;
+    text-align: center;
+    padding: 25px 15px ;
+    box-shadow: 0px 0px 5px rgba(0 ,0 ,0 , 0.2);
+    border: 1.2px sloid black;
+    border-radius: 5px;
+    margin: 15px 0;
+
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(0 ,0 ,0 , 0.3);
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(18, 71, 32);
+    background-color: rgb(249, 207, 152);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box:nth-child(2) h6 {
+    background-color: rgb(150, 255, 255);
+}
+#feature .fe-box:nth-child(3) h6 {
+    background-color: rgb(255, 255, 150);
+}
+#feature .fe-box:nth-child(4) h6 {
+    background-color: rgb(255, 150, 244);
+}
+#feature .fe-box:nth-child(5) h6 {
+    background-color: rgb(150, 199, 255);
+}
+#feature .fe-box:nth-child(6) h6 {
+    background-color: rgb(255, 150, 166);
+}
+
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#product1 .pro {
+    width: 100%;
+    min-width: 100px;
+    padding: 10px 12px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.1);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+#product1 .pro img {
+    width: 70%;
+    height: 25vh;
+    border-radius: 5px;
+}
+
+#product1 .pro .description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .description span {
+    color: rgb(89, 89, 87);
+    font-size: 12px;
+}
+
+#product1 .pro .description h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+}
+
+#product1 .pro .description .star {
+    font-size: 12px;
+    color: gold;
+}
+
+#product1 .pro .description h4 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: darkgreen;
+}
+
+#product1 .pro .svg {
+    width: 25px;
+    height: 25px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    color: rgb(31, 117, 80);
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+#product2 {
+    text-align: center;
+}
+
+#product2 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#product2 .pro {
+    width: 100%;
+    min-width: 100px;
+    padding: 10px 12px;
+    border: 1px solid rgb(205, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.1);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+
+#product2 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+#product2 .pro img {
+    width: 70%;
+    height: 25vh;
+    border-radius: 5px;
+}
+
+#product2 .pro .description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product2 .pro .description span {
+    color: rgb(89, 89, 87);
+    font-size: 12px;
+}
+
+#product2 .pro .description h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+}
+
+#product2 .pro .description .star {
+    font-size: 12px;
+    color: gold;
+}
+
+#product2 .pro .description h4 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: darkgreen;
+}
+
+#product2 .pro .svg {
+    width: 25px;
+    height: 25px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    color: rgb(31, 117, 80);
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+#product3 {
+    text-align: center;
+}
+
+#product3 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#product3 .pro {
+    width: 100%;
+    min-width: 100px;
+    padding: 10px 12px;
+    border: 1px solid rgb(205, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.1);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+
+#product3 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+#product3 .pro img {
+    width: 70%;
+    height: 25vh;
+    border-radius: 5px;
+}
+
+#product3 .pro .description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product3 .pro .description span {
+    color: rgb(89, 89, 87);
+    font-size: 12px;
+}
+
+#product3 .pro .description h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+}
+
+#product3 .pro .description .star {
+    font-size: 12px;
+    color: gold;
+}
+
+#product3 .pro .description h4 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: darkgreen;
+}
+
+#product3 .pro .svg {
+    width: 25px;
+    height: 25px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    color: rgb(31, 117, 80);
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3;
+    background-image: url(img3.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: rgb(253, 252, 252);
+    font-size: 16px;
+}
+#banner h2 {
+    color: rgb(253, 252, 252);
+    font-size: 25px;
+    padding: 10px 0;
+}
+#banner h2 span {
+    color: rgb(251, 4, 4);
+}
+#banner button:hover {
+    background-color: rgb(2, 238, 251);
+    color: rgb(10, 10, 10);
+}
+
+
+#product4 {
+    text-align: center;
+}
+
+#product4 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#product4 .pro {
+    width: 100%;
+    min-width: 100px;
+    padding: 10px 12px;
+    border: 1px solid rgb(205, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.1);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+
+#product4 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+#product4 .pro img {
+    width: 70%;
+    height: 25vh;
+    border-radius: 5px;
+}
+
+#product4 .pro .description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product4 .pro .description span {
+    color: rgb(89, 89, 87);
+    font-size: 12px;
+}
+
+#product4 .pro .description h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+}
+
+#product4 .pro .description .star {
+    font-size: 12px;
+    color: gold;
+}
+
+#product4 .pro .description h4 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: darkgreen;
+}
+
+#product4 .pro .svg {
+    width: 25px;
+    height: 25px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    color: rgb(31, 117, 80);
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#sm-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    
+}
+
+#sm-banner h4 {
+    color: rgb(133, 131, 131);
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: rgb(2, 2, 2);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+#sm-banner .banner-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    line-height: 3;
+    background-image: url(bg1.jpg);
+    width: 48%;
+    height: 40vh;
+    background-position: cover;
+    background-size: cover;
+    padding: 30px;
+    border: 1px solid;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.2);
+}
+
+#sm-banner .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    line-height: 3;
+    background-image: url(bg2.jpg);
+    width: 48%;
+    height: 40vh;
+    background-position: cover;
+    background-size: cover;
+    padding: 30px;
+    border: 1px solid;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.2);
+}
+
+
+#sm-banner .banner-box1:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+
+#sm-banner .banner-box2:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+
+
+#sm-banner1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    
+}
+#sm-banner1 h4 {
+    color: rgb(133, 131, 131);
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#sm-banner1 h2 {
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#sm-banner1 .banner-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    line-height: 3;
+    background-image: url(bg4.jpg);
+    width: 48%;
+    height: 40vh;
+    background-position: cover;
+    background-size: cover;
+    padding: 30px;
+    border: 1px solid;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.2);
+}
+#sm-banner1 .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    line-height: 3;
+    background-image: url(bg3.jpg);
+    width: 48%;
+    height: 40vh;
+    background-position: cover;
+    background-size: cover;
+    padding: 30px;
+    border: 1px solid;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.2);
+}
+
+#sm-banner1 .banner-box1:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+
+#sm-banner1 .banner-box2:hover {
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 , 0.5);
+}
+
+#signup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(211, 214, 214);
+}
